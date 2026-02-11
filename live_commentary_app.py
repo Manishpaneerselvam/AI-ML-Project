@@ -6,7 +6,7 @@ from ollama import Client
 # =======================
 # 🔧 CONFIGURATION
 # =======================
-API_KEY = "5a7235e8445ceefea6a10132a13f31cf"  # ← your key
+API_KEY = "***************************"  # ← your key
 OLLAMA_HOST = "http://localhost:11434"       # Ollama server
 MODEL_NAME = "llama3.2"                      # model name
 POLL_INTERVAL = 30                           # seconds between refreshes (manual)
@@ -144,3 +144,4 @@ if not st.session_state.commentary_feed:
 else:
     for line in st.session_state.commentary_feed:
         st.markdown(line)
+
