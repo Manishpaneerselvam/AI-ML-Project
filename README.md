@@ -1,12 +1,45 @@
-# ML-Project
-This project is based on using python ,AI/ML ,APIs,ollama and streamlit. fetching realtime football scores and commentary from the football leagues.
-1.First create a virtual environment to oragnize the project.
-2.After creating the venv install ollama latest version and install ollama libraries.
-3.pull the ollama in cmd.
-4.put this code in vs code.
-5.Get  API from football API and put it in the "API key" section.
-6.After that put model name in "model section" and poll interval you want.
-7.run the code. it will go in the browser using streamlit UI and choose the match you want to see the commentary.
+# AI/ML-Project
+Live AI Football Commentator
 
-NOTE:
-Sometimes the score or commentary will not displayed for some certain matches because football api key only allows certain leagues matches to display the commentary.
+An AI-powered football commentary generator that produces real-time match commentary using live football data and a Large Language Model (LLaMA 3.2).
+
+This project integrates:
+  API-Football (Live Match Data)
+  LLaMA 3.2 via Ollama (AI Commentary Generation)
+  Streamlit (Web Interface)
+
+Features:
+  Fetches live football matches
+  Displays real-time score and match minute
+  Generates AI-based live commentary for match events
+  Avoids duplicate commentary using event tracking
+  Clean and interactive web interface
+  
+Tech Stack:
+  Python
+  Streamlit
+  REST API (API-Football)
+  Ollama
+  LLaMA 3.2
+  Requests
+
+Installation & Setup:
+1.Clone the Repository:
+  git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+
+2.Install Required Libraries:
+  pip install streamlit requests ollama
+
+3.Install and Start Ollama:
+  ollama server
+  
+4.Pull the LLaMA 3.2 model:
+  ollama pull llama3.2
+
+5.Add Your API Key:
+  Inside the Python file, replace:
+  API_KEY = "YOUR_API_KEY"
+
+6.Run the Application:
+  streamlit run live_commentary_app.py
